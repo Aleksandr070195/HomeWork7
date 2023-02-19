@@ -70,8 +70,8 @@ public class Main {
         System.out.println("Задача 6");
         int salary = 15000;
         int total = 0;
-        int i = 0;
-        while (total + i++ < 1733400) {
+        int month = 12 * 9;
+        for (int i = 1; i < month; i++) {
             total = total + salary * 7 / 100;
             total = total + salary;
             if (i % 6 == 0) {
@@ -89,8 +89,10 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        for (int a = 1896; a < 2133; a = a + 79) {
-            System.out.println(a);
+        for (int year = 0; year <= 2150; year = year + 79) {
+            if (year > 1850 && year < 2100) {
+                System.out.println(year);
+            }
         }
     }
 }
